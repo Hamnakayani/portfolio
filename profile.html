@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamna's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bio-box {
+            background-color: #6b46c1;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            transition: background 0.3s ease;
+            color: white;
+        }
+        .bio-box:hover {
+            background-color: #b794f4;
+        }
+        .social-links {
+            color: #6b46c1;
+        }
+        @media (max-width: 640px) {
+            nav ul {
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-purple-600">Hamna's Portfolio</h1>
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
+                <li class="relative group">
+                    <a href="index.html" class="text-white block relative z-10">Home</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Home</div>
+                </li>
+                <li class="relative group">
+                    <a href="profile.html" class="text-white block relative z-10">Profile</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Profile</div>
+                </li>
+                <li class="relative group">
+                    <a href="projects.html" class="text-white block relative z-10">Projects</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Projects</div>
+                </li>
+                <li class="relative group">
+                    <a href="skills.html" class="text-white block relative z-10">Skills</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Skills</div>
+                </li>
+                <li class="relative group">
+                    <a href="gallery.html" class="text-white block relative z-10">Gallery</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Gallery</div>
+                </li>
+                <li class="relative group">
+                    <a href="career.html" class="text-white block relative z-10">Career</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Career</div>
+                </li>
+                <li class="relative group">
+                    <a href="contact.html" class="text-white block relative z-10">Contact</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-10">
+        <div class="flex flex-col items-center">
+            <div class="bio-box mt-4 flex flex-col items-center">
+                <img src="https://media.licdn.com/dms/image/D4D03AQE6PxCwqqh6cA/profile-displayphoto-shrink_200_200/0/1718303410182?e=2147483647&v=beta&t=DCkW7bMXLoMZL9PDBIB9dWt4Mf6BiI7kyVl-9TcCgo4" alt="Hamna Amjad Kayani" class="w-32 h-32 rounded-full shadow-lg mb-4">
+                <h2 class="text-3xl font-bold">Hamna Amjad Kayani</h2>
+                <p class="mt-2">Hamna Amjad Kayani is a <strong>Software Engineer</strong> with a passion for blending technology and creativity to build efficient, user-centered solutions. With a focus on real-world impact, she is dedicated to leveraging her skills to solve complex problems and improve user experiences. Currently pursuing her studies in software engineering, Hamna is enthusiastic about developing her expertise in web development, AI, and ML, particularly within the MERN stack.</p>
+                <p class="mt-4">Beyond her academic endeavors, Hamna also has a strong interest in <strong>graphic design</strong> and has worked on a variety of creative projects, including social media campaigns for organizations like Share and Care, where she aims to help communities in need through thoughtful design.</p>
+                <p class="mt-4">Her diverse skill set allows her to take on a range of projects, from technical software engineering tasks to visually impactful design work, always with the goal of making a meaningful difference.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold social-links">Social Links</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="https://www.linkedin.com/in/hamna-kayani-a76210249/" class="text-purple-600 hover:underline flex items-center">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Hamnakayani" class="text-purple-600 hover:underline flex items-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="https://instagram.com" class="text-purple-600 hover:underline flex items-center">
+                        <i class="fab fa-instagram mr-2"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-700 py-4 text-center">
+        <p class="text-gray-300">© 2024 Hamna Amjad Kayani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

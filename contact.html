@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            h2 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1024px) {
+            h2 {
+                font-size: 2.25rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 1025px) {
+            h2 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-purple-600">Hamna's Portfolio</h1>
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
+                <li class="relative group">
+                    <a href="index.html" class="text-white block relative z-10">Home</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Home</div>
+                </li>
+                <li class="relative group">
+                    <a href="profile.html" class="text-white block relative z-10">Profile</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Profile</div>
+                </li>
+                <li class="relative group">
+                    <a href="gallery.html" class="text-white block relative z-10">Gallery</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Gallery</div>
+                </li>
+                <li class="relative group">
+                    <a href="career.html" class="text-white block relative z-10">Career</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Career</div>
+                </li>
+                <li class="relative group">
+                    <a href="projects.html" class="text-white block relative z-10">Projects</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Projects</div>
+                </li>
+                <li class="relative group">
+                    <a href="skills.html" class="text-white block relative z-10">Skills</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Skills</div>
+                </li>
+                <li class="relative group">
+                    <a href="contact.html" class="text-white block relative z-10">Contact</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center text-purple-600">Contact Me</h2>
+        <form action="https://formspree.io/f/xanwgqez" method="POST" class="mt-6 max-w-lg mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700">Name</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700">Subject</label>
+                <input type="text" id="subject" name="subject" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700">Submit</button>
+            
+        </form>
+        <div class="mt-8 text-center">
+            <h3 class="text-xl font-semibold">Contact Information</h3>
+            <p class="mt-2">Email: hamnakayani2004@gmail.com</p>
+            <p>Phone: +92 309 5381229</p>
+        </div>
+    </section>
+
+    <footer class="bg-white py-4 text-center">
+        <p class="text-gray-600">© 2024 Hamna Amjad Kayani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

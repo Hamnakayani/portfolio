@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hamna's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .custom-grey {
+            background-color: rgb(192, 192, 192);
+        }
+        .image-fit {
+            height: 400px;
+            object-fit: contain;
+        }
+        @media (max-width: 640px) {
+            nav ul {
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-purple-600">Hamna's Portfolio</h1>
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
+                <li class="relative group">
+                    <a href="index.html" class="text-white block relative z-10">Home</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Home</div>
+                </li>
+                <li class="relative group">
+                    <a href="profile.html" class="text-white block relative z-10">Profile</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Profile</div>
+                </li>
+                <li class="relative group">
+                    <a href="gallery.html" class="text-white block relative z-10">Gallery</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Gallery</div>
+                </li>
+                <li class="relative group">
+                    <a href="career.html" class="text-white block relative z-10">Career</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Career</div>
+                </li>
+                <li class="relative group">
+                    <a href="projects.html" class="text-white block relative z-10">Projects</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Projects</div>
+                </li>
+                <li class="relative group">
+                    <a href="skills.html" class="text-white block relative z-10">Skills</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Skills</div>
+                </li>
+                <li class="relative group">
+                    <a href="contact.html" class="text-white block relative z-10">Contact</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center text-purple-600">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="D:\SEMESTER_7\WEB\i211189_AS1\Blue White Bold Illustrative Open Donation Instagram Post (1).png" alt="Image 1" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">A donation campaign poster designed to highlight essential items needed, encouraging contributions with a clean and modern layout.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="D:\SEMESTER_7\WEB\i211189_AS1\Pink Playful Gift Drive Christmas Flyer.png" alt="Image 2" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">Vibrant and engaging flyer for a donation drive, incorporating playful illustrations to appeal to a wider audience.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="Green and Orange Modern Charity Instagram Post (1).png" alt="Image 3" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">Emotive poster design aimed at increasing donations for orphans, using striking visuals and a call-to-action button.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="Your paragraph text.png" alt="Image 4" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">Teaser post designed to build anticipation for an upcoming event, featuring expressive photography and bold typography.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="Your paragraph text (3).png" alt="Image 5" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">Inspirational post featuring a powerful quote, paired with a touching image to foster empathy and connection with the cause.</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:scale-105">
+                <img src="download.png" alt="Image 6" class="w-full image-fit">
+                <div class="p-4">
+                    <p class="text-gray-700">Minimalist logo design for the Share and Care Organization, emphasizing the message of hope and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-700 py-4 text-center">
+        <p class="text-gray-300 mt-2">Email: <a href="mailto:hamnakayani2004@gmail.com" class="text-purple-500">hamnakayani2004@gmail.com</a></p>
+        <p class="text-gray-300 mt-2">© 2024 Hamna Amjad Kayani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

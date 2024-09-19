@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .nav-item {
+            position: relative;
+        }
+        .nav-item:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            background-color: rgba(126, 34, 206, 0.7);
+            border-radius: 0.25rem;
+            z-index: -1;
+        }
+        .hover-box {
+            transition: background-color 0.3s ease;
+        }
+        .hover-box:hover {
+            background-color: rgba(126, 34, 206, 0.8);
+        }
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: 0.875rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1024px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            h2 {
+                font-size: 2.25rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+        }
+        @media (min-width: 1025px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.75rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-purple-600">Hamna's Portfolio</h1>
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
+                <li class="relative group nav-item">
+                    <a href="index.html" class="text-white block relative z-10">Home</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Home</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="profile.html" class="text-white block relative z-10">Profile</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Profile</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="gallery.html" class="text-white block relative z-10">Gallery</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Gallery</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="career.html" class="text-white block relative z-10">Career</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Career</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="projects.html" class="text-white block relative z-10">Projects</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Projects</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="skills.html" class="text-white block relative z-10">Skills</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Skills</div>
+                </li>
+                <li class="relative group nav-item">
+                    <a href="contact.html" class="text-white block relative z-10">Contact</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center text-purple-600">Skills and Interests</h2>
+        
+        <div class="mt-6 p-6 bg-purple-500 text-white rounded-lg shadow-lg hover-box">
+            <h3 class="text-xl font-semibold">Skills</h3>
+            <div class="mt-4">
+                <div class="flex justify-between">
+                    <span>HTML</span>
+                    <span>98%</span>
+                </div>
+                <div class="bg-gray-300 h-2 rounded">
+                    <div class="bg-gray-600 h-2 rounded" style="width: 98%;"></div>
+                </div>
+
+                <div class="flex justify-between mt-2">
+                    <span>CSS</span>
+                    <span>95%</span>
+                </div>
+                <div class="bg-gray-300 h-2 rounded">
+                    <div class="bg-gray-600 h-2 rounded" style="width: 95%;"></div>
+                </div>
+
+                <div class="flex justify-between mt-2">
+                    <span>JavaScript</span>
+                    <span>90%</span>
+                </div>
+                <div class="bg-gray-300 h-2 rounded">
+                    <div class="bg-gray-600 h-2 rounded" style="width: 90%;"></div>
+                </div>
+
+                <div class="flex justify-between mt-2">
+                    <span>React</span>
+                    <span>80%</span>
+                </div>
+                <div class="bg-gray-300 h-2 rounded">
+                    <div class="bg-gray-600 h-2 rounded" style="width: 80%;"></div>
+                </div>
+
+                <div class="flex justify-between mt-2">
+                    <span>Python</span>
+                    <span>70%</span>
+                </div>
+                <div class="bg-gray-300 h-2 rounded">
+                    <div class="bg-gray-600 h-2 rounded" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 p-6 bg-purple-500 text-white rounded-lg shadow-lg hover-box">
+            <h3 class="text-xl font-semibold">Interests</h3>
+            <p class="mt-2">I am passionate about technology and design, often exploring new software tools and keeping up with design trends. I enjoy working on personal projects that blend my graphic design skills with my background in software engineering. In my free time, I love baking and sketching, which allow me to express my creativity in different ways. Additionally, I am committed to community service and actively engage in initiatives that create a positive impact.</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-700 py-4 text-center">
+        <p class="text-gray-300">© 2024 Hamna Amjad Kayani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

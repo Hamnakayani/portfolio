@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+        .project-image {
+            height: 200px; 
+            object-fit: cover; 
+        }
+        
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 640px) {
+            h2 {
+                font-size: 1.75rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1024px) {
+            h2 {
+                font-size: 2.25rem;
+            }
+        }
+        @media (min-width: 1025px) {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-700 shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-purple-600">Hamna's Portfolio</h1>
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
+                <li class="relative group">
+                    <a href="index.html" class="text-white block relative z-10">Home</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Home</div>
+                </li>
+                <li class="relative group">
+                    <a href="profile.html" class="text-white block relative z-10">Profile</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Profile</div>
+                </li>
+                <li class="relative group">
+                    <a href="gallery.html" class="text-white block relative z-10">Gallery</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Gallery</div>
+                </li>
+                <li class="relative group">
+                    <a href="career.html" class="text-white block relative z-10">Career</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Career</div>
+                </li>
+                <li class="relative group">
+                    <a href="projects.html" class="text-white block relative z-10">Projects</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Projects</div>
+                </li>
+                <li class="relative group">
+                    <a href="skills.html" class="text-white block relative z-10">Skills</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Skills</div>
+                </li>
+                <li class="relative group">
+                    <a href="contact.html" class="text-white block relative z-10">Contact</a>
+                    <div class="absolute inset-0 bg-purple-500 text-white flex items-center justify-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold text-center text-purple-600">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="bg-white shadow-lg rounded-lg p-4 project-card">
+                <img src="https://us.123rf.com/450wm/robuart/robuart1712/robuart171200927/91033181-concept-of-purebred-dogs-vector-illustration-of-different-type-of-dog.jpg?ver=6" alt="Project 1" class="w-full project-image rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">PawPrint AI: Canine Classifier</h3>
+                <p class="mt-2">An AI-based system to classify different dog breeds using transfer learning models.</p>
+                <p class="mt-2"><strong>Technologies Used:</strong> Python, Pandas, TensorFlow, Keras, OpenCV, Scikit-learn, Matplotlib</p>
+                <div class="mt-4">
+                    <a href="#" class="text-blue-500 underline">GitHub</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-blue-500 underline">Live Demo</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR55a3UE1O1DItv2lSaHqxNxfSab2HZZmkjBQ&s" alt="Project 2" class="w-full project-image rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">Race Car Game</h3>
+                <p class="mt-2">Built a console-based race car game with obstacles, power-ups, and a leaderboard using data structures and algorithms.</p>
+                <p class="mt-2"><strong>Technologies Used:</strong> C++</p>
+                <div class="mt-4">
+                    <a href="#" class="text-blue-500 underline">GitHub</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-blue-500 underline">Live Demo</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4 project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm1JyKxEOb1sPBmk6CzNMLikaCMyvcOyI9pQ&s" alt="Project 3" class="w-full project-image rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-2">Blogging Platform</h3>
+                <p class="mt-2">Created a full-stack blogging platform with a backend in Express.js and MongoDB, and a ReactJS frontend.</p>
+                <p class="mt-2"><strong>Technologies Used:</strong> Express.js, MongoDB, ReactJS</p>
+                <div class="mt-4">
+                    <a href="#" class="text-blue-500 underline">GitHub</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-blue-500 underline">Live Demo</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-gray-700 py-4 text-center">
+        <p class="text-gray-300 mt-2">Email: <a href="mailto:hamnakayani2004@gmail.com" class="text-purple-500">hamnakayani2004@gmail.com</a></p>
+        <p class="text-gray-300 mt-2">© 2024 Hamna. All rights reserved.</p>
+    </footer>
+</body>
+</html>
